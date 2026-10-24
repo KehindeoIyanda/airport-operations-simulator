@@ -62,6 +62,28 @@ The application listens locally on port 5000.
 | `/` | Application health/landing response |
 | `/flights` | Returns fictional flight information |
 
+## Automated API Testing
+
+The project includes automated API tests using `pytest` to validate the core Flask endpoints.
+
+Run the test suite from the project root:
+
+```bash
+source .venv/bin/activate
+python -m pytest -v
+```
+
+### Current Test Coverage
+
+| Test | Result |
+|---|---|
+| `test_home_endpoint` | Passed |
+| `test_flights_endpoint` | Passed |
+
+**Latest local test run:** 2 tests passed.
+
+Automated tests help verify API behavior and catch regressions when application code changes. Rerun the tests after relevant code updates.
+
 Test the application locally:
 
 ```bash
