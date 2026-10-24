@@ -15,6 +15,12 @@ The application uses Python and Flask to serve fictional airport flight informat
 - Schedule recurring monitoring tasks using systemd timers.
 - Practice Git version control and prepare the project for future CI/CD automation.
 
+## Additional Documentation
+
+- [Architecture Diagram](docs/architecture.md) — application components and health-check workflow.
+- [Troubleshooting Guide](docs/troubleshooting.md) — commands for diagnosing service, API, timer, and logging issues.
+
+
 ## Technology Stack
 
 | Technology | Purpose |
