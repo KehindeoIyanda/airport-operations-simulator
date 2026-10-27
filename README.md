@@ -1,5 +1,7 @@
 # Airport Operations Backend Simulator
 
+[![Airport Simulator CI](https://github.com/KehindeoIyanda/airport-operations-simulator/actions/workflows/ci.yml/badge.svg)](https://github.com/KehindeoIyanda/airport-operations-simulator/actions/workflows/ci.yml)
+
 ## Project Overview
 
 The Airport Operations Backend Simulator is a Linux home-lab project designed to practice backend application hosting, Linux system administration, service monitoring, and automation.
