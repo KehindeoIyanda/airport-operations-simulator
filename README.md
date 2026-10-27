@@ -84,6 +84,33 @@ python -m pytest -v
 
 Automated tests help verify API behavior and catch regressions when application code changes. Rerun the tests after relevant code updates.
 
+## Continuous Integration with GitHub Actions
+
+The project uses GitHub Actions to automatically run API tests when code is pushed to the `master` branch or when a pull request targets `master`.
+
+### CI Workflow
+
+The workflow is defined in `.github/workflows/ci.yml` and performs the following steps:
+
+1. Checks out the repository.
+2. Sets up Python 3.9.
+3. Installs project dependencies from `requirements.txt`.
+4. Runs the automated API test suite with `pytest`.
+
+### Workflow Environment
+
+- **CI platform:** GitHub Actions
+- **Runner:** Ubuntu 24.04
+- **Python:** 3.9
+- **Test framework:** pytest
+- **Workflow file:** `.github/workflows/ci.yml`
+
+### Validation
+
+The initial GitHub Actions workflow run failed during Python setup because of a runner/version configuration issue. The configuration was corrected, and workflow run #2 completed successfully.
+
+The CI pipeline provides automated feedback on API test results after code changes are pushed to GitHub.
+
 Test the application locally:
 
 ```bash
